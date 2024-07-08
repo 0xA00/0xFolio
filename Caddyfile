@@ -1,0 +1,9 @@
+git.0xa0.dev {
+    reverse_proxy 127.0.0.1:3001
+}
+
+
+web.0xa0.dev {
+    root ./build
+    file_server 
+}
