@@ -29,9 +29,9 @@ import UsrNimg from "$lib/UsrNimg.svelte";
 	<meta name="description" content="0xa0's portfolio">
 	<meta name="keywords" content="0xa0, 0xa0 website, 0xa0 projects">
 	<!-- have a big ass gif of a spinning blahaj-->
-	<meta name="og:image" content="%sveltekit.assets%/blahaj.webp">
+	<meta name="og:image" content="https://web.0xa0.dev/blahaj.webp">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image:src" content="%sveltekit.assets%/blahaj.webp">
+	<meta name="twitter:image:src" content="https://web.0xa0.dev/blahaj.webp">
 
 	
 	<link rel="icon" type="image/webp" href="blahaj.webp">
