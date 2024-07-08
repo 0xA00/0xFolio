@@ -1,0 +1,51 @@
+
+  [
+    {
+    "name": "0xScanner",
+    "source": "https://github.com/0xA00/0xScan",
+    "description": "Minecraft server Scanner using masscan",
+    "languages": ["python"],
+    "urlimg":"https://i.imgur.com/CGvCGX8.png"
+  }
+    ,
+    {
+      "name": "DvDLogo",
+  
+      "source": "https://github.com/0xA00/DVDlogo-bouncing-C",
+      "description": "simple dvd logo bouncing around the terminal",
+      "languages": ["C"],
+      "urlimg":"https://github.com/0xA00/DVDlogo-bouncing-C/blob/main/Wsnakegif.gif?raw=true"
+    },
+    
+    {
+      "name": "Save client",
+  
+      "source": "https://github.com/0xA00/Client-save",
+      "description": "save client my for school , work with a Rust™ server",
+      "languages": ["C","rust"],
+      "urlimg":"https://i.imgur.com/2wxagsl.png"
+    },
+    {
+      "name": "SyncRealDate",
+  
+      "source": "https://github.com/0xA00/SyncRealDate",
+      "description": "A Minecraft plugin to sync with real life hours",
+      "languages": ["java"],
+      "urlimg":"https://i.imgur.com/vEkmZCJ.png"
+    },
+    {
+      "name": "Portfolio",
+      "href": "https://0xa0.dev",
+      "source": "https://github.com/0xA00/Sveltefolio",
+      "description": "The portfolio you are currently on",
+      "languages": ["svelte","javascript","css","html"],
+      "urlimg":"https://i.imgur.com/hrmYzdj.png"
+    },
+    {
+      "name":"Sharkpoll Project",
+      "source":"https://github.com/orgs/SAE-Vote-Reseau/repositories",
+      "description":"project for school, a Java poll app using Elgamal encryption and RSA encryption",
+      "languages":["java"],
+      "urlimg":"https://i.imgur.com/GXZWy2k.png"
+    }
+  ]
