@@ -10,7 +10,7 @@ git.0xa0.dev:6970 {
 }
 
 
-web.0xa0.dev {
+0xa0.dev {
     root ./build
     file_server 
 }
