@@ -10,7 +10,12 @@ git.0xa0.dev:6970 {
 }
 
 
-0xa0.dev {
+https://0xa0.dev {
     root ./build
     file_server 
+}
+
+
+www.0xa0.dev {
+    redir https://0xa0.dev{uri}
 }
