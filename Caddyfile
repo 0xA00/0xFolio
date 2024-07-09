@@ -3,7 +3,7 @@ git.0xa0.dev {
 }
 
 
-git.0xa0.dev:6969{
+git.0xa0.dev:6969 {
     route /deploy {
         method POST
         handle {
