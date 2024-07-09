@@ -32,7 +32,5 @@ import UsrNimg from "$lib/UsrNimg.svelte";
 	<meta name="og:image" content="https://web.0xa0.dev/blahaj.webp">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image:src" content="https://web.0xa0.dev/blahaj.webp">
-
-	
 	<link rel="icon" type="image/webp" href="blahaj.webp">
 </svelte:head>
