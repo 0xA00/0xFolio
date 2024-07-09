@@ -5,10 +5,7 @@ git.0xa0.dev {
 
 git.0xa0.dev:6969 {
     route /deploy {
-        method POST
-        handle {
-            respond "Deployed"
-        }
+        reverse_proxy localhost:6969
     }
 }
 
