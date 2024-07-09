@@ -1,6 +1,13 @@
 on: [push]
 jobs:
-  test:
-    runs-on: docker
+  # this workfolio will run on the server , it will do npm run build and copy the build folder on the local /home/0xa0/0xFolio/0xFolio/build folder
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - run: pwd
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Copy build folder
+        run: cp -r build /home/0xa0/0xFolio/0xFolio/build
