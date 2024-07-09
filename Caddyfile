@@ -3,6 +3,17 @@ git.0xa0.dev {
 }
 
 
+git.0xa0.dev:6969{
+    route /deploy {
+        method POST
+        handle {
+            exec ./deploy.sh
+            respond "Deployed"
+        }
+    }
+}
+
+
 web.0xa0.dev {
     root ./build
     file_server 
