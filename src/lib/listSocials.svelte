@@ -27,7 +27,9 @@
             </svg>
     </a>
 
-    <a href="https://matrix.to/#/@0xa0:matrix.org">
+
+    <!-- rn I don't use thaaatt much Matrix-->
+    <a href="https://matrix.to/#/@0xa0:matrix.org" style="display:none">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><text x="106" y="346" font-family="Arial" fill="#fff" font-size="346"><tspan x="106" y="346"  font-weight="bold">m</tspan></text><path fill="#fff" d="M0 0h48v512H0zm48 0h64v48H48zm0 464h64v48H48zM512 0h-48v512h48zm-48 0h-64v48h64zm0 464h-64v48h64z"></path></svg>
     </a>
 
