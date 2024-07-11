@@ -34,8 +34,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50px;
+        flex-direction: column;
 
+
+    }
+
+    footer h5{
+        margin-bottom: 0;
     }
 </style>
 
