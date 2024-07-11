@@ -135,6 +135,17 @@
       
     }
 
+
+    @media (max-width: 620px){
+        .allofThat{
+            flex-direction: column;
+            gap: 20px;
+            
+        }
+
+      
+    }
+
     .lildesc{
 
         text-align:start;
