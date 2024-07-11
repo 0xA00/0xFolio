@@ -56,6 +56,30 @@
 
     }
 
+    function TimeUpdate(){
+        const date = new Date();
+        const hours = date.getHours();
+        const minutes = date.getMinutes();
+        const seconds = date.getSeconds();
+        return `${hours}:${minutes}:${seconds}`;
+    }
+
+    let time = TimeUpdate();
+    setInterval(()=>{
+        time = TimeUpdate();
+    }, 1000)
+
+    //timezone shitshow
+    let UserTimezone =Intl.DateTimeFormat().resolvedOptions().timeZone;
+    let FrenchTimezone = "Europe/Paris"
+    let UserTime = new Date().toLocaleString("en-US", {timeZone: UserTimezone});
+    let FrenchTime = new Date().toLocaleString("en-US", {timeZone: FrenchTimezone});
+    let diff : any = new Date(UserTime).getTime() - new Date(FrenchTime).getTime();
+    let MyMidnight12h = new Date(new Date().setHours(0,0,0,0) + diff).toLocaleTimeString("en-US", {hour: '2-digit'});
+
+
+
+
 
 </script>
 
@@ -87,7 +111,8 @@
     <div class="lildesc">
         <p>Hi everyone , I'm 0xa0. A {~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} year old developer from Montpellier, France ! <br>
         I mainly do projects related to Minecraft but I can somehow work on other things. <br>
-        I'm currently interested in learning Rust, web design and doing silly things :3</p>
+        I'm currently interested in learning Rust, web design and doing silly things :3<br>
+        My current time is {time} and my midnight is your {MyMidnight12h} !</p>
     </div>
 
 
