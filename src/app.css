@@ -5,6 +5,7 @@
 :root{
   font-family: 'Space Grotesk', sans-serif;
 
+  color:white;
 }
 
 @keyframes godinchallah{
@@ -21,55 +22,7 @@ body {
   margin-right : 0; 
   overflow-x: hidden;
   width: 100%;
+  background-color: #36454F;
 }
 
-.godrays{
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.3;
- 
-  
 
-  --stripes: repeating-linear-gradient(
-        100deg,
-        #fff 0%,
-        #fff 7%,
-        transparent 10%,
-        transparent 12%,
-        #fff 16%
-    );
-
-    --rainbow: repeating-linear-gradient(
-        100deg,
-        #60a5fa 10%,
-        #e879f9 15%,
-        #60a5fa 20%,
-        #5eead4 25%,
-        #60a5fa 30%
-        
-    );
-
-    background-image: var(--stripes), var(--rainbow);
-    background-size: 300%, 200%;
-    background-position: 50% 50%, 50% 50%;
-    
-    filter: invert(100%);
-    mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 60%);
-    pointer-events: none;
-
-}
-
-.godrays::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: var(--stripes), var(--rainbow);
-  background-size: 200%, 100%;
-  animation: godinchallah 60s linear infinite;
-  background-attachment: fixed;
-  mix-blend-mode: difference;
-}

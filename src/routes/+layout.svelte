@@ -10,7 +10,7 @@
 </div>
 
 <footer>
-
+    <h5> © {new Date().getFullYear()} - 0xa0</h5>
 </footer>
 
 
@@ -28,6 +28,14 @@
         to{
             opacity: 1;
         }
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+
     }
 </style>
 

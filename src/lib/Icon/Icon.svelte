@@ -11,8 +11,8 @@
 <style>
     .icon{
         height: 2em;
-        width: 2em;
-        display: block;
+        width: fit-content;
+   
     }
 
     .icon :global(img){

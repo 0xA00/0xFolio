@@ -44,8 +44,15 @@
     {
       "name":"Sharkpoll Project",
       "source":"https://github.com/orgs/SAE-Vote-Reseau/repositories",
-      "description":"project for school, a Java poll app using Elgamal encryption and RSA encryption",
+      "description":"project for school, a Java poll app using Elgamal encryption",
       "languages":["java"],
       "urlimg":"https://i.imgur.com/GXZWy2k.png"
+    },
+    {
+      "name":"Wavetech",
+      "source":"https://discord.gg/SR6q7sC",
+      "description":"Not a programming project but the TMC Minecraft server I mainly play on",
+      "languages":["java"],
+      "urlimg":""
     }
   ]

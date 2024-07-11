@@ -27,6 +27,7 @@
 
     function onUsrnameClcik(){
         usrnameCountClcik++;
+        console.log(usrnameCountClcik);
         if (usrnameCountClcik >= 1){
             usrnameEdible = true;
         }
@@ -139,11 +140,8 @@
     @media (max-width: 620px){
         .allofThat{
             flex-direction: column;
-            gap: 20px;
             
         }
-
-      
     }
 
     .lildesc{
@@ -181,7 +179,7 @@
     img{
         width: 250px;
         height: 250px;
-        border-radius: 20%;
+        border-radius: 10%;
         margin-right: 20px;
     }
 

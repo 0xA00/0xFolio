@@ -1,24 +1,24 @@
 <script>
 	import EvaImg from "$lib/EvaImg.svelte";
 	import Eighteightthreeone from "$lib/Icon/eighteightthreeone.svelte";
+	import ListOf88 from "$lib/ListOf88.svelte";
 
 
 	import ListOfProjects from "$lib/ListOfProjects.svelte";
 import ListSocials from "$lib/listSocials.svelte";
 import UsrNimg from "$lib/UsrNimg.svelte";
 
+
 </script>
 
 
-<div class="godrays"></div>
-
 <UsrNimg />
 
-<Eighteightthreeone />
+<ListOf88 />
 
 <ListSocials />
 
-<EvaImg />
+
 
 <ListOfProjects />
 
@@ -35,3 +35,5 @@ import UsrNimg from "$lib/UsrNimg.svelte";
 	<meta name="twitter:image:src" content="/blahaj.gif">
 	<link rel="icon" type="image/webp" href="/blahaj.webp">
 </svelte:head>
+
+
