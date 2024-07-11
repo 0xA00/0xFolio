@@ -29,10 +29,10 @@ import UsrNimg from "$lib/UsrNimg.svelte";
 	<meta name="description" content="0xa0's portfolio, I mainly do Minecraft related things and I try to learn new things :3">
 	<meta name="keywords" content="0xa0, 0xa0 website, 0xa0 projects">
 	<!-- have a big ass gif of a spinning blahaj-->
-	<meta name="og:image" content="/blahaj.gif">
+	<meta name="og:image" content="/blahahicon.gif">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="/blahaj.gif">
-	<meta name="twitter:image:src" content="/blahaj.gif">
+	<meta name="twitter:image" content="/blahahicon.gif">
+	<meta name="twitter:image:src" content="/blahahicon.gif">
 	<link rel="icon" type="image/webp" href="/blahaj.webp">
 </svelte:head>
 
