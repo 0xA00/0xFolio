@@ -12,7 +12,7 @@
         <img src={nbpath} alt="88x31" />
     </a>
     {/if}
-    {#if link.path == ""}
+    {#if link == ""}
     <img src={nbpath} alt="88x31" />
     {/if}
         
