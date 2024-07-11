@@ -7,7 +7,7 @@
 </script>
 
 <Icon alt="eighteightthreeone">
-    {#if link.path != ""}
+    {#if link!= ""}
     <a href={link}>
         <img src={nbpath} alt="88x31" />
     </a>
