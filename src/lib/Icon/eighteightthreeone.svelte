@@ -3,8 +3,6 @@
     export let nb;
     export let link;
     let nbpath = "88x31/"+nb;
-    console.log(nbpath);
-    console.log(link);
 
 </script>
 

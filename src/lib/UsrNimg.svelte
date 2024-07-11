@@ -109,10 +109,11 @@
     </div>
 
     <div class="lildesc">
-        <p>Hi everyone , I'm 0xa0. A {~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} year old developer from Montpellier, France ! <br>
+        <p>Hi everyone , I'm 0xa0. A {~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} year old developer from France  <br>
         I mainly do projects related to Minecraft but I can somehow work on other things. <br>
         I'm currently interested in learning Rust, web design and doing silly things :3<br>
         My current time is {time} and my midnight is your {MyMidnight12h} !</p>
+        
     </div>
 
 
