@@ -1,27 +1,26 @@
 <script>
-	import EvaImg from "$lib/EvaImg.svelte";
-	import Eighteightthreeone from "$lib/Icon/eighteightthreeone.svelte";
 	import ListOf88 from "$lib/ListOf88.svelte";
 
-
-	import ListOfProjects from "$lib/ListOfProjects.svelte";
-import ListSocials from "$lib/listSocials.svelte";
-import UsrNimg from "$lib/UsrNimg.svelte";
 
 
 </script>
 
-
-<UsrNimg />
-
-<ListOf88 />
-
-<ListSocials />
-
-
-
-<ListOfProjects />
-
+<div class="homeDiv">
+	<div>
+	<h1> sup :3</h1>
+	<p>I'm 0xa0 (You can call me Zero), a  {~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} year old developer, I mainly do Minecraft related things and I try to learn new things :3</p>
+	<p>this website is heavily inspired by <a href="https://x.com/soraschizoid" target="_blank">Soraschizoid</a> and it is made using <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>, I intend to use this website as a portfolio but also a place where I can show my projects and write some blogs
+	about what I do in general. Not all of my projects will be displayed here as some of them can't be even called projects</p>
+	<p>If you want to contact me, you can do so by sending me a DM on <a href="https://discordapp.com/users/298221448642953217">Discord</a>, and you can also find me on Twitter <a href="https://twitter.com/0xa0_dev" target="_blank">@0xa0_dev</a> and <a href="https://github.com/0xA00">Github</a></p>
+	</div>
+	<div>
+		<ListOf88/>
+	</div>
+	<div>
+		<h1> WEBSITE IN CONSTRUCTION</h1>
+		<h2>Yeah I know, it's not very smart to host a website that is not finished, but don't worry, I'm working on it :3</h2>
+	</div>
+</div>
 
 
 <svelte:head>
@@ -36,4 +35,58 @@ import UsrNimg from "$lib/UsrNimg.svelte";
 	<link rel="icon" type="image/webp" href="/blahaj.webp">
 </svelte:head>
 
+
+<style>
+
+	.homeDiv{
+		width:95%;
+		margin: auto;
+	}
+	
+	h1{
+		color: var(--primary-color);
+	}
+	h2{
+		color: var(--primary-color);
+		font-weight: 500;
+	
+	}
+
+	p{
+		color: black;
+		text-wrap:pretty;
+		font-weight: 500;
+		font-size: 1.1em;
+	}
+
+	a{
+		text-decoration: none;
+		color: var(--primary-color);
+		transition: color 0.5s;
+		transition: background-color 0.5s;
+
+		&::after{
+			content: " ↱";
+		}
+	}
+
+	a:hover{
+		color:white;
+		background-color: var(--primary-color);
+
+	}
+
+
+
+	.homeDiv > div:not(:last-child)::after{
+		content:"";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: var(--primary-color);
+		opacity: 0.7;
+		margin-bottom: 1em;
+	}
+
+</style>
 
