@@ -8,7 +8,7 @@
 
 <Icon alt="eighteightthreeone">
     {#if link!= ""}
-    <a href={link}>
+    <a href={link} target="_blank">
         <img src={nbpath} alt="88x31" />
     </a>
     {/if}

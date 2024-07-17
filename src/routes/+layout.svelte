@@ -7,30 +7,57 @@
 </header>
 <div class="mainContent">
     <div class="contentHeader">
-        <h1>0xa0.dev</h1>
-        <span class="delimitor">/</span>
+        <h1>0xa0.dev <span class="delimitor">/</span></h1>
+        
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/projects">Projects</a>
         <a href="/blog">Blogs</a>
     </div>
+    <main id="slotDiv">
     <slot/>
+    </main>
 </div>
 
 <footer>
-    <h5> © {new Date().getFullYear()} - 0xa0</h5>
+	<p>0xa0.dev © {new Date().getFullYear()}</p>
 </footer>
+
 
 
 <style>
     .mainContent{
+        display: flex;
+        flex-direction: column;
         animation: FadeIn 1s;
-        width: 90%;
-        margin: auto;
+        max-width: 56rem;
+        margin-left: auto;
+        margin-right: auto;
         border: 2px solid var(--primary-color);
+       
 
+        @media (min-width: 768px){
+            height: calc(100dvh - 7rem)
+        };
+
+        @media (max-width: 768px){
+            height: calc(100dvh - 7rem)
+        }
 
     }
+
+    #slotDiv{
+
+        height: auto;
+        overflow-y: auto;
+        flex: 1 1 0%;
+        padding: 1rem;
+
+        
+
+    }
+
+
 
     @keyframes FadeIn{
         from{
@@ -58,7 +85,7 @@
 
     h1, .delimitor, a{
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: var(--primary-color);
         
     }
@@ -95,9 +122,15 @@
     .contentHeader{
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        padding: 0.75rem 1.5rem;
+
         gap:calc(1rem + 1vw);
         border-bottom: 1px solid var(--primary-color);
+        flex-wrap: wrap;
+
+        & > a{
+            font-size: .75rem;
+        }
     }
 
    

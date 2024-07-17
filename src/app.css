@@ -18,11 +18,10 @@ to {
 }
 
 body {
-  margin-left : 0;
-  margin-right : 0; 
-  overflow-x: hidden;
-  width: 100%;
-  background-color: whitesmoke;
+  margin: 0;
+  color: var(--secondary-color);
+  padding: 27px;
+  
 }
 
 

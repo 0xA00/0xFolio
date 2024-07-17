@@ -7,20 +7,29 @@
 
 <div class="homeDiv">
 	<div>
-	<h1> sup :3</h1>
-	<p>I'm 0xa0 (You can call me Zero), a  {~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} year old developer, I mainly do Minecraft related things and I try to learn new things :3</p>
+	<h1> Hi :3</h1>
+	<p>I'm 0xa0 (You can call me Zero), a  {~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} year old developer and I mainly do Minecraft related things and I try to learn new things.</p>
 	<p>this website is heavily inspired by <a href="https://x.com/soraschizoid" target="_blank">Soraschizoid</a> and it is made using <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>, I intend to use this website as a portfolio but also a place where I can show my projects and write some blogs
-	about what I do in general. Not all of my projects will be displayed here as some of them can't be even called projects</p>
-	<p>If you want to contact me, you can do so by sending me a DM on <a href="https://discordapp.com/users/298221448642953217">Discord</a>, and you can also find me on Twitter <a href="https://twitter.com/0xa0_dev" target="_blank">@0xa0_dev</a> and <a href="https://github.com/0xA00">Github</a></p>
+	about what I do in general. Not all of my projects will be displayed here as some of them can't be even called projects.</p>
+
+	<p>If you want to contact me, you can do so by sending me a DM on <a href="https://discordapp.com/users/298221448642953217">Discord</a>, and you can also find me on Twitter <a href="https://twitter.com/0xa0_dev" target="_blank">@0xa0_dev</a> and <a href="https://github.com/0xA00">Github</a>.</p>
+
+	<p> Current interests : </p>
+	<ul>
+		<li>Rust and Go</li>
+		<li>Minecraft modding</li>
+		<li>web development in general</li>
+	</ul>
 	</div>
 	<div>
 		<ListOf88/>
 	</div>
 	<div>
-		<h1> WEBSITE IN CONSTRUCTION</h1>
-		<h2>Yeah I know, it's not very smart to host a website that is not finished, but don't worry, I'm working on it :3</h2>
+		wip (still building my site)
 	</div>
 </div>
+
+
 
 
 <svelte:head>
@@ -39,8 +48,9 @@
 <style>
 
 	.homeDiv{
-		width:95%;
+		
 		margin: auto;
+		text-wrap: wrap;
 	}
 	
 	h1{
@@ -87,6 +97,8 @@
 		opacity: 0.7;
 		margin-bottom: 1em;
 	}
+
+
 
 </style>
 
