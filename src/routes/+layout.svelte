@@ -33,7 +33,8 @@
         max-width: 56rem;
         margin-left: auto;
         margin-right: auto;
-        border: 2px solid var(--primary-color);
+       
+        border-bottom: 2px solid var(--primary-color);
        
 
         @media (min-width: 768px){
