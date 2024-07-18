@@ -7,7 +7,7 @@
 </header>
 <div class="mainContent">
     <div class="contentHeader">
-        <h1>0xa0.dev <span class="delimitor">/</span></h1>
+        <h1>0xa0.dev <span class="delimitor">$~</span></h1>
         
         <a href="/">Home</a>
         <a href="/about">About</a>

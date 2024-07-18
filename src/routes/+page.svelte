@@ -33,7 +33,7 @@
 
 
 <svelte:head>
-	<title>0xa0 Portfolio</title>
+	<title>$./0xa0.sh -v</title>
 	<meta name="description" content="0xa0's portfolio, I mainly do Minecraft related things and I try to learn new things :3">
 	<meta name="keywords" content="0xa0, 0xa0 website, 0xa0 projects">
 	<!-- have a big ass gif of a spinning blahaj-->
@@ -41,7 +41,6 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="/blahahicon.gif">
 	<meta name="twitter:image:src" content="/blahahicon.gif">
-	<link rel="icon" type="image/webp" href="/blahaj.webp">
 </svelte:head>
 
 
