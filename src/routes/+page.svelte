@@ -62,7 +62,7 @@
 	}
 
 	p{
-		color: black;
+
 		text-wrap:pretty;
 		font-weight: 500;
 		font-size: 1.1em;
@@ -80,7 +80,7 @@
 	}
 
 	a:hover{
-		color:white;
+		color:black;
 		background-color: var(--primary-color);
 
 	}

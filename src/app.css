@@ -5,7 +5,8 @@
 :root{
   font-family: 'Space Grotesk', sans-serif;
 
-  color:white;
+  background-color:var(--background-color);
+  color: var(--secondary-color);
 }
 
 @keyframes godinchallah{
@@ -26,6 +27,7 @@ body {
 
 
 :root {
-  --primary-color: #007BFF;
-  --secondary-color: #000000;
+  --primary-color: #ffe600;
+  --secondary-color: #ffffff;
+  --background-color: #181818;
 }

@@ -38,11 +38,11 @@
        
 
         @media (min-width: 768px){
-            height: calc(100dvh - 7rem)
+            height: calc(100dvh - 5rem)
         };
 
         @media (max-width: 768px){
-            height: calc(100dvh - 7rem)
+            height: calc(100dvh - 5rem)
         }
 
     }
@@ -80,8 +80,9 @@
 
     }
 
-    footer h5{
+    footer p{
         margin-bottom: 0;
+        margin-top: 10px;
     }
 
     h1, .delimitor, a{
@@ -93,7 +94,7 @@
 
     a{
         text-decoration: none;
-        color: black;
+        color: var(--secondary-color);
         font-size: 1.2rem;
         &::before{
             content: "(";
