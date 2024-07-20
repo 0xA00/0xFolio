@@ -99,13 +99,12 @@
     .project{
         display: flex;
         flex-direction: column;
-        background-color: #16161D;
+        background-color: var(--background-color);
         color: white;
         border-radius: 22px;
         padding: 20px;
         margin: 10px;
 
-        height: 300px;
         overflow: hidden;
     }
 
@@ -113,6 +112,7 @@
         text-align: start;
         font-weight: 400;
         font-size: 1.5rem;
+        padding-bottom: 1rem;
         
     }
 
