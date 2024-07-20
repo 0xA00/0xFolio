@@ -96,42 +96,38 @@
         text-decoration: none;
         color: var(--secondary-color);
         font-size: 1.2rem;
-        &::before{
-            content: "(";
-        }
-        &::after{
-            content: ")";
-        }
-    
+        transition: color 0.5s;
+
+
+
+        
+
     }
 
 
     a:hover{
-        color: rgb(109, 109, 109);
+        color: var(--primary-color);
         
         cursor: pointer;
 
-        &::before{
-            content: "[";
-        }
-        &::after{
-            content: "]";
-        }
-        
+
+
     }
     
 
     .contentHeader{
         display: flex;
         align-items: center;
-        padding: 0.75rem 1.5rem;
+        padding-bottom: 0.75rem;
 
-        gap:calc(1rem + 1vw);
+        gap:0.75rem;
         border-bottom: 1px solid var(--primary-color);
         flex-wrap: wrap;
 
         & > a{
             font-size: .75rem;
+            font-weight: 100;
+            line-height: 1rem;
         }
     }
 
