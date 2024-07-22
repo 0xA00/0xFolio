@@ -20,7 +20,7 @@
 
 
     function randomNotSo(){
-        let possibleNums = [ -6, -5, 5, 6,10];
+        let possibleNums = [ -4, -3, 5,3];
         return possibleNums[Math.floor(Math.random() * possibleNums.length)];
 
     }
@@ -82,7 +82,7 @@
                 x = Math.random() * width;
                 y = 0;
                 xSpeed = randomNotSo();
-                ySpeed =Math.random() * 3;
+                ySpeed =Math.random();
             }
 
         
