@@ -7,8 +7,21 @@ git.0xa0.dev:6970 {
 
 
 https://0xa0.dev {
-    root ./build
-    file_server 
+    root * ./build
+    file_server {
+        precompressed br gzip
+    }
+
+
+    handle {
+		rewrite /.txt /index.txt
+	}
+
+    try_files {path} {path}.html
+
+    handle_errors 418 {
+        respond "tf you are a teapot, what you mean by that" 418
+    }
 
 
     handle_errors {
