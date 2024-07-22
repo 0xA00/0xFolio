@@ -21,7 +21,7 @@
       "name": "Save client",
   
       "source": "https://github.com/0xA00/Client-save",
-      "description": "save client my for school , work with a Rust™ server",
+      "description": "save client I've made for school , work with a Rust™ server",
       "languages": ["C","rust"],
       "urlimg":"https://i.imgur.com/2wxagsl.png"
     },
