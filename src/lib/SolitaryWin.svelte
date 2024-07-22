@@ -11,6 +11,8 @@
         height: 100%;
         z-index: -1;
         overflow: hidden;
+        transition: opacity 1s;
+        opacity: 0;
     }
 </style>
 
@@ -49,8 +51,24 @@
         const width = canvas.width = window.innerWidth;
         const height = canvas.height = window.innerHeight;
 
+        //have a var with a chance of 1 in 10
+        let chance = Math.random() * 10;
+        let eclipse = false;
         const blahaj = new Image();
-        blahaj.src = 'blahaj.png';
+
+        if(chance < 9){
+            blahaj.src = 'blahaj.png';
+        }
+        else{
+            blahaj.src = 'behelith.png';
+
+            eclipse = true;
+       
+        }
+
+
+       
+        
         //spawn multiple images
         
 
@@ -94,6 +112,14 @@
         onKonamiCode(() => {
             //change z-index to 1
             canvas.style.zIndex = 1;
+            if (eclipse){
+                canvas.style.backgroundImage = 'url("eclipse.jpg")';
+                //have background stretch to cover the whole screen
+                canvas.style.backgroundSize = 'cover';
+                canvas.style.opacity = 1;
+            }
+    
+            
             
             draw();
         });
