@@ -51,20 +51,20 @@
         const width = canvas.width = window.innerWidth;
         const height = canvas.height = window.innerHeight;
 
-        //have a var with a chance of 1 in 10
-        let chance = Math.random() * 10;
+        //have a var with a chance of 1 in 10 and if it's more than 7 , eclipse will be true
         let eclipse = false;
-        const blahaj = new Image();
-
-        if(chance < 9){
-            blahaj.src = 'blahaj.png';
-        }
-        else{
-            blahaj.src = 'behelith.png';
-
+        let chance = Math.floor(Math.random() * 10);
+        if(chance > 7){
             eclipse = true;
-       
         }
+
+        //create an image element
+        const blahaj = new Image();
+        blahaj.src = 'blahaj.png';
+        if (eclipse){
+            blahaj.src = 'behelith.png';
+        }
+
 
 
        
@@ -116,8 +116,9 @@
                 canvas.style.backgroundImage = 'url("eclipse.jpg")';
                 //have background stretch to cover the whole screen
                 canvas.style.backgroundSize = 'cover';
-                canvas.style.opacity = 1;
+                
             }
+            canvas.style.opacity = 1;
     
             
             
