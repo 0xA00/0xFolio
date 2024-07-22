@@ -26,7 +26,7 @@
 		<RecentProjects/>
 	</div>
 	<div>
-		wip (still building my site)
+		Still working on my website ☠️☠️☠️☠️
 	</div>
 	<div>
 		<ListOf88/>
