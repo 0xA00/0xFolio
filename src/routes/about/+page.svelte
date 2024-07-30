@@ -1,4 +1,8 @@
-<h1>WIP</h1>
+<h1>About me</h1>
+
+
+
+
 
 
 <style>

@@ -23,10 +23,7 @@
 	</ul>
 	</div>
 	<div>
-		<RecentProjects/>
-	</div>
-	<div>
-		Still working on my website ☠️☠️☠️☠️
+		<p>You can find my projects <a href="/projects">here</a> and my blog <a href="/blog">here</a></p>
 	</div>
 	<div>
 		<ListOf88/>
