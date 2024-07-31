@@ -154,7 +154,21 @@ onMount(() => {
                     if(day.contributionCount > 0){
                     const hovercards = document.createElement('div');
                     hovercards.classList.add('hovercard');
-                    hovercards.textContent = day.contributionCount + ' commits on ' + day.date;
+                    //change the date to only something like 29 August
+                    let correctDate = day.date.split('-')
+   
+
+
+                    if(day.contributionCount > 1){
+                        //change the date to only something like 29 August
+               
+                        hovercards.textContent = day.contributionCount + ' commits on ' + correctDate[2] + ' ' + monthss[parseInt(correctDate[1])]
+                    }
+                    else
+                    {
+                        hovercards.textContent = day.contributionCount + ' commit on ' + correctDate[2] + ' ' + monthss[parseInt(correctDate[1])]
+                    }
+                    
                     //change opacity to 0
                     Alldays[i].appendChild(hovercards);
                     }
