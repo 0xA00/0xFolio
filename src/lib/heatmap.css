@@ -1,0 +1,33 @@
+.map{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 3px;
+
+
+}
+
+.day{
+    background-color: #ebedf0;
+
+    margin:1px;
+
+}
+
+.day[data-count="0"]{
+    background-color: var(--nocommit)
+}
+
+
+
+
+
+
+
+:root{
+    --nocommit: #383838;
+    --lowcommit: #9be9a8;
+    --medcommit: #40c463;
+    --highcommit: #30a14e;
+    --maxcommit: #216e39;
+}
