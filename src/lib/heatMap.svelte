@@ -54,7 +54,7 @@
         <div class="monthname">
         </div>
         <div class="map">
-            {#each Array(368) as _}
+            {#each Array(371) as _}
             <div class="day"></div>
             {/each}
         </div>
@@ -110,12 +110,7 @@ const client = new GraphQLClient(endpoint, {
 
 const monthss = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-//take the month we are right now
-const date = new Date()
-const month = date.getMonth()
-console.log(month)
-//from the month that we are , create an array with the months that we have to show, so this one and all 11 before in monthss , it's an array of 12 months
-const months = [...monthss.slice(month + 1), ...monthss.slice(0, month + 1)]
+
 
 
 
@@ -124,8 +119,19 @@ const months = [...monthss.slice(month + 1), ...monthss.slice(0, month + 1)]
 
 
 onMount(() => {
-    document.querySelector('.monthname').innerHTML = months.map(month => `<div>${month}</div>`).join('')
     client.request(github, varia).then(data => {
+//get the month of the last day and it will be our months page
+        const month = data.user.contributionsCollection.contributionCalendar.weeks[51].contributionDays[6].date.split('-')[1]
+        console.log(month)
+//now we gather all the 11 previous month and put them in an array const months = [...monthss.slice(month + 1), ...monthss.slice(0, month + 1)] and make it shifted so that the current month is the last one
+        const months = [...monthss.slice(parseInt(month) + (parseInt(month) > 14 ? 1 : 0)), ...monthss.slice(0, parseInt(month) +  + (parseInt(month) > 14 ? 1 : 0))]
+        console.log(months)
+        const monthname = document.querySelector('.monthname')
+        months.forEach(month => {
+            const monthdiv = document.createElement('div')
+            monthdiv.textContent = month
+            monthname.appendChild(monthdiv)
+        })
 
        //redo the same thing but instead of creating the div , query the div and change the background color
          const Alldays : any  = document.querySelectorAll('.day')
@@ -162,11 +168,11 @@ onMount(() => {
                     if(day.contributionCount > 1){
                         //change the date to only something like 29 August
                
-                        hovercards.textContent = day.contributionCount + ' commits on ' + correctDate[2] + ' ' + monthss[parseInt(correctDate[1])]
+                        hovercards.textContent = day.contributionCount + ' commits on ' + correctDate[2] + ' ' + monthss[parseInt(correctDate[1])-1]
                     }
                     else
                     {
-                        hovercards.textContent = day.contributionCount + ' commit on ' + correctDate[2] + ' ' + monthss[parseInt(correctDate[1])]
+                        hovercards.textContent = day.contributionCount + ' commit on ' + correctDate[2] + ' ' + monthss[parseInt(correctDate[1])-1]
                     }
                     
                     //change opacity to 0
