@@ -117,7 +117,6 @@ const client = new GraphQLClient(endpoint, {
 const monthss = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 
-let day = new Date().getDate().valueOf()
 
 
 
