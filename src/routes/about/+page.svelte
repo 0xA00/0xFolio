@@ -80,8 +80,6 @@
    .userImg > img{
         border-radius: 15%;
         margin-top: 1rem;
-
-
         margin-left: 1rem;
         }
 
@@ -93,6 +91,11 @@
             
             gap: 1rem;
             }
+
+            .userImg > img{
+                margin-left: 0;
+                margin-top: 0;
+                }
 
 
     }
