@@ -5,7 +5,7 @@
         gap: 1rem;
         width: fit-content;
         max-width: 100%;
-        margin: auto;
+        
         padding-bottom: 2rem;
     }
 
