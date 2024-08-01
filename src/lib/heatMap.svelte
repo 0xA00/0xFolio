@@ -5,8 +5,14 @@
         gap: 1rem;
         width: fit-content;
         max-width: 100%;
-        
+        transition: display 0.5s;
         padding-bottom: 2rem;
+    }
+
+    @media (max-width: 813px) {
+        .heatmap {
+            display: none;
+        }
     }
 
     .dayoftheweek {
