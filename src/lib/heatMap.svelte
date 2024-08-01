@@ -68,7 +68,7 @@
 
 
 
-<script lang="ts">
+<script lang="ts" defer>
     //let's create a github contribution heatmap
     //use github graphl API
 import { gql, GraphQLClient } from 'graphql-request'
