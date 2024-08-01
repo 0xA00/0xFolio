@@ -69,7 +69,7 @@
 </div>
 
 
-*Not finished yet , i need to add month and days of the week, but still want to show it to you, so you can see the progress*
+
 
 
 
