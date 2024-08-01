@@ -2,13 +2,8 @@
     .heatmap {
         display: flex;
         flex-direction: row;
-<<<<<<< HEAD
         gap: 1rem;
         width: fit-content;
-=======
-        gap: 0.5rem;
-        width: 100%;
->>>>>>> d55d89c19844e857379f651b7cc0e45b60c6ae77
         max-width: 100%;
         margin: auto;
         padding-bottom: 2rem;
