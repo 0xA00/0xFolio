@@ -128,9 +128,10 @@ onMount(() => {
     client.request(github, varia).then(data => {
 //get the month of the last day and it will be our months page
         const month = data.user.contributionsCollection.contributionCalendar.weeks[51].contributionDays[6].date.split('-')[1]
+        const day = data.user.contributionsCollection.contributionCalendar.weeks[51].contributionDays[6].date.split('-')[2]
         console.log(month)
 //now we gather all the 11 previous month and put them in an array const months = [...monthss.slice(month + 1), ...monthss.slice(0, month + 1)] and make it shifted so that the current month is the last one
-        const months = [...monthss.slice(parseInt(month) + (parseInt(month) > 14 ? 1 : 0)), ...monthss.slice(0, parseInt(month) +  + (parseInt(month) > 14 ? 1 : 0))]
+        const months = [...monthss.slice(parseInt(month) + (parseInt(day) > 14 ? 1 : 0)), ...monthss.slice(0, parseInt(month) +  + (parseInt(day) > 14 ? 1 : 0))]
         console.log(months)
         const monthname = document.querySelector('.monthname')
         months.forEach(month => {
