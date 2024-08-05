@@ -21,16 +21,53 @@
 </div>
 </div>
 
-<p>hi ! I'm 0xa0, a  {~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} year old developer and I mainly do Minecraft related things and I try to learn new things.</p>
+<p>I mainly do Minecraft related things and I try to learn new things.</p>
 <p>I live in France but I'm okay with moving to another country if I have to, I'm currently finishing my last year of computer science at the University of Montpellier-Sète.</p>
 
 
 <HeatMap/>
 
 
+<h1>
+    My interests
+</h1>
+
+<p>
+    I could talk a lot about what I like, but I'm going to try to keep it short and simple :
+</p>
+
+<ul>
+    <li>Programming</li>
+    <li>Video games</li>
+    <li>Music</li>
+    <li>Art</li>
+
+</ul>
+
+<p>
+    I'm also interested about learning new things, so if you want to talk about anything , feel free to contact me !
+</p>
+
+<h1>
+    My skills
+</h1>
+
+<p>
+    Recently I've been working a lot with web languages like HTML, CSS, JS and framework like Svelte or Vuejs. But I also have some experience with Java, Python, C and Rust.
+    I want to learn more about Rust and Go in the future and I also want to learn more about web security as I'm really interested in this field.
+</p>
+
+
+
+
+
+
 
 
 <style>
+
+
+        
 
 
     
@@ -100,3 +137,9 @@
 
     }
 </style>
+
+
+
+<svelte:head>
+    <title>$./0xa0.sh --about</title>
+</svelte:head>

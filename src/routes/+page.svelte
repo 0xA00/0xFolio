@@ -1,5 +1,6 @@
 <script>
-	import ListOf88 from "$lib/ListOf88.svelte";
+	import EvaImg from "$lib/EvaImg.svelte";
+import ListOf88 from "$lib/ListOf88.svelte";
 	import RecentProjects from "$lib/RecentProjects.svelte";
 
 
@@ -25,6 +26,12 @@
 	<div>
 		<p>You can find my projects <a href="/projects">here</a> and my blog <a href="/blog">here</a></p>
 	</div>
+
+	<div>
+		<EvaImg/>
+	</div>
+
+
 	<div>
 		<ListOf88/>
 	</div>

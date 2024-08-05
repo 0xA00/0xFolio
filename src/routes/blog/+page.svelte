@@ -7,3 +7,9 @@
         font-size: 2rem;
         }
 </style>
+
+
+
+<svelte:head>
+    <title>$./0xa0.sh --blog</title>
+</svelte:head>

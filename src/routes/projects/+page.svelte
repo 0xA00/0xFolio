@@ -1,4 +1,10 @@
-<h1>WIP</h1>
+<script>
+	import ListOfProjects from "$lib/ListOfProjects.svelte";
+
+</script>
+<h1>Projects</h1>
+
+<ListOfProjects/>
 
 
 <style>
@@ -7,3 +13,9 @@
         font-size: 2rem;
         }
 </style>
+
+
+
+<svelte:head>
+    <title>$./0xa0.sh --projects</title>
+</svelte:head>

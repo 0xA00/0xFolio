@@ -134,7 +134,7 @@ onMount(() => {
       
 //now we gather all the 11 previous month and put them in an array const months = [...monthss.slice(month + 1), ...monthss.slice(0, month + 1)] and make it shifted so that the current month is the last one
         const months = [...monthss.slice(parseInt(month) - (new Date().getDate() > 14 ? 0 : 1)), ...monthss.slice(0, parseInt(month)  - (new Date().getDate() > 14 ? 0 : 1))]
-        
+        console.log(months)
         const monthname = document.querySelector('.monthname')
         months.forEach(month => {
             const monthdiv = document.createElement('div')

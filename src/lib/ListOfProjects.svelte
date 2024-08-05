@@ -6,9 +6,6 @@
 
 
 
-<fieldset>
-    <legend><h2>Projets / Contributions</h2></legend>
-
     <div class="projects">
     {#each project as {name, source, languages,description}}
         <SlugProject name={name} githublink={source} lang={languages}>
@@ -18,15 +15,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-</fieldset>
 
 
 
@@ -49,12 +37,5 @@
     }
 
 
-    .projects{
-     
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        justify-content: center;
-    }
- 
+
 </style>
