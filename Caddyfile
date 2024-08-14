@@ -5,6 +5,10 @@ git.0xa0.dev:6970 {
     }
 }
 
+blog.0xa0.dev {
+    reverse_proxy localhost:9999
+}
+
 
 https://0xa0.dev {
     root * ./build
