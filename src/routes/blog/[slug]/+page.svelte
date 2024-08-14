@@ -1,8 +1,12 @@
 <script>
 	import SvelteMarkdown from "svelte-markdown";
 
+
     export let data;
     const source = data.props.blogData.content;
+
+
+    
 
 
 
@@ -16,7 +20,6 @@
 </div>
 
 
-<style>
-
-
-</style>
+<svelte:head>
+    <title>{data.props.blogData.title}</title>
+</svelte:head>

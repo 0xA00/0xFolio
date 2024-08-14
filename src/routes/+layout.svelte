@@ -1,5 +1,5 @@
 <script>
-    import SolitaryWin from "$lib/SolitaryWin.svelte";
+
 import "../app.css";
 </script>
 
@@ -24,7 +24,6 @@ import "../app.css";
 	<p>0xa0.dev © {new Date().getFullYear()}</p>
 </footer>
 
-<SolitaryWin/>
 
 <style>
     .mainContent{
