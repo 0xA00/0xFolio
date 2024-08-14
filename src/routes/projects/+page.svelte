@@ -1,6 +1,7 @@
 <script>
 	import ListOfProjects from "$lib/ListOfProjects.svelte";
 
+
 </script>
 <h1>Projects</h1>
 

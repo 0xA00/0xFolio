@@ -74,62 +74,26 @@
 
 
 
-<script lang="ts" defer>
+<script lang="ts">
+	import { onMount } from "svelte";
     //let's create a github contribution heatmap
     //use github graphl API
-import { gql, GraphQLClient } from 'graphql-request'
-	import { onMount } from 'svelte';
+    export let prop;
     import "./heatmap.css";
+    let data = prop.prop.datagraph;
 
 
-const github = gql`
-query($userName:String!) { 
-  user(login: $userName){
-    contributionsCollection {
-      contributionCalendar {
-        totalContributions
-        weeks {
-          contributionDays {
-            contributionCount
-            date
-          }
-        }
-      }
-    }
-  }
-}
-`
 
-
-const varia = {
-    userName: "0xA00"
-}
-
-const endpoint = "https://api.github.com/graphql"
-
-const client = new GraphQLClient(endpoint, {
-    headers: {
-        //I don't give a damn about this token, it's only a read token, what will you do with that ? know what public commit I have made ?
-        authorization: `Bearer `+ import.meta.env.VITE_githubtoken
-    }
-})
 
 const monthss = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 
 
 
-
-
-
-
-
-
+        //get the month of the last day and it will be our months page
 
 
 onMount(() => {
-    client.request(github, varia).then(data => {
-//get the month of the last day and it will be our months page
         const month = data.user.contributionsCollection.contributionCalendar.weeks[51].contributionDays[6].date.split('-')[1]
       
 //now we gather all the 11 previous month and put them in an array const months = [...monthss.slice(month + 1), ...monthss.slice(0, month + 1)] and make it shifted so that the current month is the last one
@@ -191,12 +155,8 @@ onMount(() => {
                     i++;
                 })
             })
-    }) 
-    //
 
-
-
-})
+        })
 
 
 </script>

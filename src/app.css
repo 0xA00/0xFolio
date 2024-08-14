@@ -35,5 +35,45 @@ body {
   --background-color: #1a1a1a;
 }
 
+h2{
+  color: var(--primary-color);
+}
+
+
+code {
+  display: block;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  border: 1px solid #3f3f3f;
+  padding: 0.2em 0.4em;
+  max-width: 75%;
+  min-width: 75%;
+  text-wrap: wrap;
+  
+ 
+  background-color: #333;
+
+
+}
+
+
+th {
+  background-color: #333;
+  color: var(--primary-color);
+  padding: 5px;
+
+}
+
+td {
+  background-color: #333;
+  padding: 5px;
+  color: var(--secondary-color);
+
+}
+
+table, th, td {
+  border: 1px solid var(--primary-color);
+  border-collapse: collapse;
+}
 
 
