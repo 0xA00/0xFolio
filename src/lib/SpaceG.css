@@ -3,6 +3,6 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url($lib/font/SpaceGrotesk.woff2) format('woff2');
+    src: url($lib/font/IBMPlexMono-Regular.ttf);
     }
 
