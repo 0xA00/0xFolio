@@ -1,6 +1,5 @@
 <script>
-	import HeatMap from "$lib/heatMap.svelte";
-    export let data;
+
 
 
 </script>
@@ -27,7 +26,6 @@
 <p>I live in France but I'm okay with moving to another country if I have to, I'm currently finishing my last year of computer science at the University of Montpellier-Sète.</p>
 
 
-<HeatMap prop={data}/>
 
 
 

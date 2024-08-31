@@ -30,7 +30,7 @@ import "../app.css";
         display: flex;
         flex-direction: column;
         animation: FadeIn 1s;
-        max-width: 49rem;
+        max-width: 34rem;
         margin-left: auto;
         margin-right: auto;
        

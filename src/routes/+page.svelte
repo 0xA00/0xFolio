@@ -14,6 +14,10 @@ import ListOf88 from "$lib/ListOf88.svelte";
 	<p>this website is heavily inspired by <a href="https://x.com/soraschizoid" target="_blank">Soraschizoid</a> and it is made using <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>, I intend to use this website as a portfolio but also a place where I can show my projects and write some blogs
 	about what I do in general. Not all of my projects will be displayed here as some of them can't be even called projects.</p>
 
+	<div>
+		<EvaImg/>
+	</div>
+	
 	<p>If you want to contact me, you can do so by sending me a DM on <a href="https://discordapp.com/users/298221448642953217">Discord</a>, and you can also find me on Twitter <a href="https://twitter.com/0xa0_dev" target="_blank">@0xa0_dev</a> and <a href="https://github.com/0xA00">Github</a>.</p>
 
 	<p> Current interests : </p>
@@ -25,10 +29,6 @@ import ListOf88 from "$lib/ListOf88.svelte";
 	</div>
 	<div>
 		<p>You can find my projects <a href="/projects">here</a> and my blog <a href="/blog">here</a></p>
-	</div>
-
-	<div>
-		<EvaImg/>
 	</div>
 
 
