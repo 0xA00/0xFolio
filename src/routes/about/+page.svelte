@@ -1,9 +1,3 @@
-<script>
-
-
-
-</script>
-
 
 
 
@@ -86,12 +80,7 @@
 
         }
 
-    p{
 
-        text-wrap:pretty;  
-        font-weight: 500;
-        font-size: 1.1em;
-    }
     .userImg{
         display: flex;
         flex-direction: row;

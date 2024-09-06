@@ -1,7 +1,7 @@
 <script>
 	import EvaImg from "$lib/EvaImg.svelte";
 import ListOf88 from "$lib/ListOf88.svelte";
-	import RecentProjects from "$lib/RecentProjects.svelte";
+
 
 
 
@@ -10,7 +10,7 @@ import ListOf88 from "$lib/ListOf88.svelte";
 <div class="homeDiv">
 	<div>
 	<h1> Hi :3</h1>
-	<p>I'm 0xa0, a  {~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} year old developer and I mainly do Minecraft related things and I try to learn new things.</p>
+	<p>I'm <span id="OxName">0xa0</span>, a  {~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} year old developer and I mainly do Minecraft related things and I try to learn new things.</p>
 	<p>this website is heavily inspired by <a href="https://x.com/soraschizoid" target="_blank">Soraschizoid</a> and it is made using <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>, I intend to use this website as a portfolio but also a place where I can show my projects and write some blogs
 	about what I do in general. Not all of my projects will be displayed here as some of them can't be even called projects.</p>
 
@@ -56,6 +56,11 @@ import ListOf88 from "$lib/ListOf88.svelte";
 <style>
 
 
+	#OxName{
+		color:var(--primary-color);
+	}
+
+
 
 	.homeDiv{
 		
@@ -72,13 +77,7 @@ import ListOf88 from "$lib/ListOf88.svelte";
 	
 	}
 
-	p{
-
-		text-wrap:pretty;
-		font-weight: 500;
-		font-size: 1.1em;
-	}
-
+	
 	a{
 		text-decoration: none;
 		color: var(--primary-color);

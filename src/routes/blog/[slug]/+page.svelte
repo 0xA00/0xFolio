@@ -1,9 +1,9 @@
 <script>
-	import SvelteMarkdown from "svelte-markdown";
+
 
 
     export let data;
-    const source = data.props.blogData.content;
+    let source = data.props.blogData.content;
 
 
     
@@ -16,8 +16,9 @@
 <h3>{data.props.blogData.timeCreated}</h3>
 
 <div class="blogpost">
-    <SvelteMarkdown {source}/>
+    <div class="blogcontent" contenteditable="false" bind:innerHTML={source}></div>
 </div>
+
 
 
 <svelte:head>

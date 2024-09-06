@@ -2,7 +2,7 @@
     import { page } from '$app/stores'
     //get path
     let pathname = $page.url.pathname ;
-    console.log(pathname);
+
 
 
     </script>
