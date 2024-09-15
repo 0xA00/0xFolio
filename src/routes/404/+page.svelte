@@ -20,6 +20,4 @@
     </p>
 
 
-    
-    
     <img src="IKW.jpg" alt="IKW" width="200" height="200">

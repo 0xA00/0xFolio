@@ -8,9 +8,13 @@
 <div class="blog">
 {#each data.props.blogData as {title, timeCreated,Author,blogfileName}}
     <div class="blogpost">
-       <a href="/blog/{blogfileName}"> <h2 class="titleh2">{title}</h2> </a>
+        <a href="/blog/{blogfileName}">
+        <div class="border">
+        <h2 class="titleh2">{title}</h2>
         <p>{timeCreated}</p>
         <p><span class="green">Author</span>: { Author}</p>
+        </div>
+    </a>
     </div>
     
 {/each}
@@ -32,7 +36,13 @@
     .blogpost{
         display: flex;
         flex-direction: column;
+        gap: 0.5rem;
 
+    }
+
+    .border{
+        border: 1px solid var(--background-color);
+        padding: 1rem;
     }
 
     .blogpost:not(:last-child)::after{
@@ -46,8 +56,6 @@
     }
 
     .titleh2{
-
-
         width: fit-content;
         color:white;
         margin-bottom: 0;
@@ -55,36 +63,39 @@
         transition: color 0.5s;
     }
 
-    .titleh2:hover{
-        color: black;
-    }
 
     a{
         text-decoration: none;
-        color: var(--secondary-color);
-        font-size: 1.2rem;
-        transition: color 0.5s;
-        transition: background-color 0.5s;
-        width: fit-content;
-    }
 
-    a:hover{
-        color: black;
-        background-color: var(--primary-color);
     }
-
     p{
         font-weight: 500;
         font-size: 1.1em;
         opacity: 0.7;
         margin-bottom: 0;
         margin-top: 0;
+        color: white;
     }
 
     .green{
         color: var(--primary-color);
    }
 
+.border:hover .titleh2 {
+    background-color: var(--primary-color);
+    width: 100%;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.border:hover .titleh2::after {
+    content: " →";
+    transition: content 0.5s, color 0.5s;
+}
+
+.border:hover {
+    border-color: white;
+    transition: border-color 0.5s;
+}
 
 </style>
 

@@ -20,6 +20,7 @@
 
 
 <div class="project">
+    <div class="border">
     <a href={githublink} target="_blank" class="slug">
         
     <div class="upPart">
@@ -41,6 +42,7 @@
 
     </a>
     
+</div>
 
 </div>
 
@@ -53,16 +55,10 @@
         transition: color 0.5s;
     }
 
-    .slug:hover{
-        color: var(--primary-color);
-    }
-
     .upPart{
         display: flex;
         justify-content:flex-start;
         flex-direction: column;
-        
-        
         gap: 10px;
         height: fit-content;
         
@@ -72,21 +68,12 @@
         }
 
         & .link{
-            
             font-weight: 800;
             text-decoration: none;
             margin-bottom: 5px;
             display: flex;
             flex-direction: row;
         } 
-
-
-       
-     
-
-
-
-    
     }
 
     .langPart{
@@ -102,11 +89,17 @@
         flex-direction: column;
         background-color: var(--background-color);
         color: white;
-        border-radius: 22px;
         padding: 20px;
-        margin: 10px;
-
         overflow: hidden;
+
+    }
+
+    .border{
+        border: 1px solid var(--background-color);
+        padding: 20px;
+        transition: border-color 0.5s; /* Only transition the border color */
+        margin: 20px;
+        box-sizing: border-box;
     }
 
     .descPart{
@@ -114,7 +107,6 @@
         font-weight: 400;
         font-size: 1rem;
         padding-bottom: 1rem;
-        
     }
 
     .project:not(:last-child)::after{
@@ -125,12 +117,23 @@
         background-color: var(--primary-color);
         opacity: 0.7;
         margin-top:1rem;
-        margin-bottom: 1em;
+
     }
 
+    .border:hover {
+        border-color: var(--secondary-color); /* Only change the border color on hover */
+    }
 
+    .border:hover h2 {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        transition: background-color 0.5s, color 0.5s;
+    }
 
-    
+    .border:hover h2::after {
+        content: " →";
+        transition: content 0.5s;
+    }
+
 </style>
-
 
