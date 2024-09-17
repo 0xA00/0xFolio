@@ -51,9 +51,6 @@ https://0xa0.dev {
 
     }
 
-    @404 {
-        expression {http.error.status_code} == 404
-    }
 
 
 
