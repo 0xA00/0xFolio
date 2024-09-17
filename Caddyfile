@@ -9,6 +9,10 @@ blog.0xa0.dev {
     reverse_proxy localhost:9999
 }
 
+0xType.0xa0.dev {
+    reverse_proxy localhost:9090
+}
+
 
 https://0xa0.dev {
     root * ./build
@@ -39,14 +43,6 @@ https://0xa0.dev {
         file_server
 
     }
-
-    handle_path /0xType/ {
-        uri strip_prefix /0xType
-        reverse_proxy localhost:9090 {
-            rewrite /
-        }
-    }
-
 }
 
 
