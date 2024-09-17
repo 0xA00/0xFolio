@@ -33,7 +33,7 @@ body {
 }
 
 p, li{
-	  font-size: .9rem;
+	  font-size: 1rem;
 }
 
 
@@ -68,6 +68,11 @@ td {
 table, th, td {
   border: 1px solid var(--primary-color);
   border-collapse: collapse;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
 }
 
 

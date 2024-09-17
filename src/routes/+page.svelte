@@ -15,7 +15,7 @@ import ListOf88 from "$lib/ListOf88.svelte";
 	about what I do in general. Not all of my projects will be displayed here as some of them can't be even called projects.</p>
 
 	<div>
-		<EvaImg/>
+		<img src="https://imgur.com/GTweN4M.gif" alt="header" width="100%" height="auto" />
 	</div>
 	
 	<p>If you want to contact me, you can do so by sending me a DM on <a href="https://discordapp.com/users/298221448642953217">Discord</a>, and you can also find me on Twitter <a href="https://twitter.com/0xa0_dev" target="_blank">@0xa0_dev</a> and <a href="https://github.com/0xA00">Github</a>.</p>
@@ -78,22 +78,17 @@ import ListOf88 from "$lib/ListOf88.svelte";
 	}
 
 	
-	a{
-		text-decoration: none;
-		color: var(--primary-color);
-		transition: color 0.5s;
-		transition: background-color 0.5s;
+	a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s;
+    border-bottom: 1px dashed var(--primary-color);
+}
 
-		&::after{
-			content: " ↱";
-		}
-	}
-
-	a:hover{
-		color:black;
-		background-color: var(--primary-color);
-
-	}
+a:hover {
+    color: lightblue;
+    border-bottom: 1px dashed lightblue;
+}
 
 
 	
