@@ -23,6 +23,18 @@ https://0xa0.dev {
 
     try_files {path} {path}.html
 
+
+    rewrite /0xType /0xType/
+    handle /0xType/*
+    {
+        uri strip_prefix /0xType
+        rewrite * /socket.io{path}
+        reverse_proxy localhost:9090{
+            header_up Host {host}
+            header_up X-Real-IP {remote}
+        }
+    }
+
     handle_errors 418 {
         respond "tf you are a teapot, what you mean by that" 418
     }
@@ -40,15 +52,12 @@ https://0xa0.dev {
 
     }
 
-    handle_path /0xType/* {
-        uri strip_prefix /0xType
-        reverse_proxy localhost:9090 {
-					header_up Host {host}
-		            header_up X-Real-IP {remote}
-		            header_up X-Forwarded-For {remote}
-		            header_up X-Forwarded-Proto {scheme}
-		}
+    @404 {
+        expression {http.error.status_code} == 404
     }
+
+
+
 
 }
 
