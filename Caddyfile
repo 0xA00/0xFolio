@@ -25,11 +25,10 @@ https://0xa0.dev {
 
 
     rewrite /0xType /0xType/
-    handle /0xType/*
-    {
+    handle /0xType/*{
         uri strip_prefix /0xType
         rewrite * /socket.io{path}
-        reverse_proxy localhost:9090{
+        reverse_proxy localhost:9090 {
             header_up Host {host}
             header_up X-Real-IP {remote}
         }
