@@ -39,6 +39,12 @@ https://0xa0.dev {
         file_server
 
     }
+
+    route /0xType/ {
+        uri strip_prefix /0xType
+        reverse_proxy localhost:9090
+    }
+
 }
 
 
