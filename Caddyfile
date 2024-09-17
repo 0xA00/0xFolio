@@ -40,7 +40,7 @@ https://0xa0.dev {
 
     }
 
-    handle_path /0xType/ {
+    handle_path /0xType/* {
         uri strip_prefix /0xType
         reverse_proxy localhost:9090 {
 					header_up Host {host}
