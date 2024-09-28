@@ -1,5 +1,5 @@
 import { compile } from 'mdsvex';
-
+export const prerender = false;
 
 
 export const load = async ({params}) => {
