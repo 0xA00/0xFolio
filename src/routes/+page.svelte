@@ -18,7 +18,7 @@ import ListOf88 from "$lib/ListOf88.svelte";
 		<img src="https://imgur.com/GTweN4M.gif" alt="header" width="100%" height="auto" />
 	</div>
 	
-	<p>If you want to contact me, you can do so by sending me a DM on <a href="https://discordapp.com/users/298221448642953217">Discord</a>, and you can also find me on Twitter <a href="https://twitter.com/0xa0_dev" target="_blank">@0xa0_dev</a> and <a href="https://github.com/0xA00">Github</a>.</p>
+	<p>If you want to contact me, you can do so by sending me a DM on <a href="https://discordapp.com/users/298221448642953217">Discord</a>, and you can also find me on Twitter <a href="https://twitter.com/0xa0_" target="_blank">@0xa0_dev</a> and <a href="https://github.com/0xA00">Github</a>.</p>
 
 	<p> Current interests : </p>
 	<ul>

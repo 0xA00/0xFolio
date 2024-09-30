@@ -11,17 +11,9 @@ blog.0xa0.dev {
 
 
 https://0xa0.dev {
-    root * ./build
-    file_server {
-        precompressed br gzip
-    }
+    
 
-
-    handle {
-		rewrite /.txt /index.txt
-	}
-
-    try_files {path} {path}.html
+ reverse_proxy localhost:3000
 
 
 
@@ -37,8 +29,7 @@ https://0xa0.dev {
         }
 
         
-        rewrite @404 /404.html
-        file_server
+
 
     }
 
