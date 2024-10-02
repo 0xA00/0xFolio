@@ -27,15 +27,20 @@ shikiOptions: {
     export let data;
     export let value = data.blogData.content;
     //generate a little description of the blog post
-    let description = value.slice(0, 100) + "...";
+
+    // Generate a little description of the blog post
+    export let imgSet= data.blogData.imgSet || "https://pbs.twimg.com/profile_banners/2746734373/1723453519/600x200";
+
  
 
 
 
 </script>
 
-<h1>{data.blogData.title}</h1>
-<h3>{data.blogData.timeCreated}</h3>
+<h1 id="tilte">{data.blogData.title}</h1>
+<h3 id="timecre">{data.blogData.timeCreated}</h3>
+<img src={imgSet} alt="blog post image" width="100%" height="auto" />
+
 
 <div class="blogpost">
   <Markdown {carta} bind:value theme="github" />
@@ -45,8 +50,14 @@ shikiOptions: {
 
 <svelte:head>
     <title>{data.blogData.title}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content="0xa0 website blog post" />
+    <meta name="author" content="0xa0" />
+    <meta name="robots" content="index, follow" />
     <meta name="keywords" content="0xa0, 0xa0 website, 0xa0 projects" />
+    <meta name="og:image" content={imgSet}>
+	  <meta name="twitter:card" content="summary_large_image">
+	  <meta name="twitter:image" content={imgSet}>
+	  <meta name="twitter:image:src" content={imgSet}>
 </svelte:head>
 
 
@@ -65,6 +76,17 @@ shikiOptions: {
 
 * {
   font-family:"Space Opera", 'Inter', sans-serif;
+}
+
+#timecre{
+  opacity: 0.4;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+#tilte{
+  color: var(--primary-color);
+  margin-bottom: auto;
 }
 
 
