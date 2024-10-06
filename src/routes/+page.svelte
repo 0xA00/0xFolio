@@ -77,24 +77,20 @@ import ListOf88 from "$lib/ListOf88.svelte";
 	
 	}
 
-	
+
+
 	a {
-    text-decoration: none;
-    color: var(--primary-color);
-    transition: color 0.3s;
-    border-bottom: 1px dashed var(--primary-color);
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s;
+  border-bottom: 1px dashed var(--primary-color);
 }
 
 a:hover {
-    color: lightblue;
-    border-bottom: 1px dashed lightblue;
+  color: lightblue;
+  border-bottom: 1px dashed lightblue;
 }
 
-
-	
-
-
-	
 
 
 	.homeDiv > div:not(:last-child)::after{

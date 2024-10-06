@@ -135,5 +135,10 @@
         transition: content 0.5s;
     }
 
+
+    .link{
+        word-break: normal;
+    }
+
 </style>
 

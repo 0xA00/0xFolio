@@ -38,7 +38,7 @@ shikiOptions: {
 </script>
 
 <h1 id="tilte">{data.blogData.title}</h1>
-<h3 id="timecre">{data.blogData.timeCreated}</h3>
+<h3 id="timecre">Published {data.blogData.timeCreated}</h3>
 <img src={imgSet} alt="blog post image" width="100%" height="auto" />
 
 
@@ -75,7 +75,8 @@ shikiOptions: {
   }
 
 * {
-  font-family:"Space Opera", 'Inter', sans-serif;
+  font-family:Arial,"Space Opera", 'Inter', sans-serif;
+  line-height: 1.5;
 }
 
 #timecre{
@@ -87,6 +88,19 @@ shikiOptions: {
 #tilte{
   color: var(--primary-color);
   margin-bottom: auto;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s;
+  border-bottom: 1px dashed var(--primary-color);
+}
+
+a:hover {
+  color: lightblue;
+  border-bottom: 1px dashed lightblue;
 }
 
 
