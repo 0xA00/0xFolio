@@ -51,30 +51,42 @@ h2{
 
 
 
-th {
-  background-color: #333;
-  color: var(--primary-color);
-  padding: 5px;
-
-}
-
-td {
-  background-color: #333;
-  padding: 5px;
-  color: var(--secondary-color);
-
-}
-
-table, th, td {
-  border: 1px solid var(--primary-color);
+table {
+  max-width: 100%;
   border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #111; /* Darker background for more contrast */
+  color: var(--secondary-color);
 }
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid var(--primary-color);
+}
+
+th {
+  background-color: #222; /* Darker background for more contrast */
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+tr:nth-child(even) {
+  background-color: #333; /* Darker background for more contrast */
+}
+
+tr:hover {
+  background-color: #444; /* Darker background for more contrast */
+}
+
 
 
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 100%; 
   height: auto;
 
 
@@ -104,4 +116,25 @@ img {
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.466) transparent;  /* Thin scrollbar, transparent track, and light thumb */
+}
+
+
+.carta-viewer > :not(pre) > code {
+  background-color: #333;
+  color: var(--primary-color);
+  padding: 2px;
+  border-radius: 4px;
+  font-weight: bold; /* Make the text bold */
+}
+
+.carta-viewer a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s;
+  border-bottom: 1px dashed var(--primary-color);
+}
+
+.carta-viewer a:hover {
+  color: lightblue;
+  border-bottom: 1px dashed lightblue;
 }

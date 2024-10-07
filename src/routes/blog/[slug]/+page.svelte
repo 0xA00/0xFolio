@@ -30,9 +30,39 @@ shikiOptions: {
 
     export let data;
     export let value = data.blogData.content;
-    //generate a little description of the blog post
+    //generate a little description of the blog post, to do that we take the first 100 characters of the blog post 
+    const cleanContent = value.replace(/^#{1,6}\s+/gm, '').replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1').replace(/!\[([^\]]+)\]\([^\)]+\)/g, '').replace(/```[\s\S]*?```/g, '') 
+    .replace(/(\*\*|__)(.*?)\1/g, '$2')
+    .replace(/(\*|_)(.*?)\1/g, '$2')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/^[\*\-+]\s+/gm, '')
+    .replace(/^\d+\.\s+/gm, '')
+    .replace(/^>\s+/gm, '')
+    .replace(/^(?:[-*_]){3,}\s*$/gm, '')
+    .replace(/^\|(.+)\|$/gm, '$1')
+    .replace(/^[-:| ]+$/gm, '');
 
-    // Generate a little description of the blog post
+    const trimmedContent = cleanContent.replace(/\s+/g, ' ').trim();
+
+    // Tronquer à la longueur maximale
+  let description = trimmedContent.slice(0, 100);
+  
+  // S'assurer que la description ne coupe pas un mot
+  if (description.length === 100) {
+    const lastSpaceIndex = description.lastIndexOf(' ');
+    if (lastSpaceIndex !== -1) {
+      description = description.slice(0, lastSpaceIndex);
+    }
+  }
+  
+  // Ajouter des points de suspension si le texte a été tronqué
+  if (description.length < trimmedContent.length) {
+    description += '...';
+  }
+
+
+
+
     export let imgSet= data.blogData.imgSet || "https://pbs.twimg.com/profile_banners/2746734373/1723453519/600x200";
 
  
@@ -54,7 +84,7 @@ shikiOptions: {
 
 <svelte:head>
     <title>{data.blogData.title}</title>
-    <meta name="description" content="0xa0 website blog post" />
+    <meta name="description" content={description} />
     <meta name="author" content="0xa0" />
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="0xa0, 0xa0 website, 0xa0 projects" />
@@ -74,9 +104,13 @@ shikiOptions: {
     text-wrap: auto;
   }
 
-  :global(pre code) {
+  :global(pre > code) {
     font-size: 0.9rem;
   }
+
+
+
+
 
 * {
   font-family:Arial,"Space Opera", 'Inter', sans-serif;
@@ -95,17 +129,6 @@ shikiOptions: {
 }
 
 
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-  transition: color 0.3s;
-  border-bottom: 1px dashed var(--primary-color);
-}
-
-a:hover {
-  color: lightblue;
-  border-bottom: 1px dashed lightblue;
-}
 
 
 
