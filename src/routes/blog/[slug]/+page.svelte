@@ -5,7 +5,11 @@
 
 	import { code } from '@cartamd/plugin-code';
 
+  import { math } from '@cartamd/plugin-math';
+
   import './github.scss';
+
+  import 'katex/dist/katex.css';
 
 
 
@@ -14,7 +18,7 @@
   sanitizer: false,
   extensions: [code({
     theme: 'github-dark'
-  })
+  }), math()
 ],
 shikiOptions: {
     themes: ['github-dark']

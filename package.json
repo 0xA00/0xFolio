@@ -38,6 +38,7 @@
 	"type": "module",
 	"dependencies": {
 		"@cartamd/plugin-code": "^4.0.6",
+		"@cartamd/plugin-math": "^4.1.0",
 		"carta-md": "^4.5.0",
 		"shiki": "^1.21.0"
 	}
