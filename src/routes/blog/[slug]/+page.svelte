@@ -73,7 +73,8 @@ shikiOptions: {
 
 <h1 id="tilte">{data.blogData.title}</h1>
 <h3 id="timecre">Published {data.blogData.timeCreated}</h3>
-<img src={imgSet} alt="blog post image" width="100%" height="auto" />
+<img src={imgSet} alt="blog post image" style="width: 100%; height: auto;" />
+
 
 
 <div class="blogpost">
@@ -83,7 +84,7 @@ shikiOptions: {
 
 
 <svelte:head>
-    <title>{data.blogData.title}</title>
+    <title>{data.blogData.title} | 0xa0.dev</title>
     <meta name="description" content={description} />
     <meta name="author" content="0xa0" />
     <meta name="robots" content="index, follow" />
@@ -127,6 +128,7 @@ shikiOptions: {
   color: var(--primary-color);
   margin-bottom: auto;
 }
+
 
 
 
