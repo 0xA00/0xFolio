@@ -54,12 +54,5 @@
       "description":"Not a programming project but the TMC Minecraft server I mainly play on",
       "languages":["java"],
       "urlimg":""
-    },
-     {
-      "name":"test v2",
-      "source":"",
-      "description":"test",
-      "languages":["svelte","javascript","css","HTML"],
-      "urlimg":""
-     }
+    }
   ]
