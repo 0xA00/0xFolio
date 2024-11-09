@@ -13,7 +13,11 @@
     <div class="blogpost">
         <a href="/blog/{blogfileName}">
         <div class="border">
-        <h2 class="titleh2">{title}</h2>
+            <div class="wrapper">
+                <div class="background">
+                    <h2 class="titleh2">{title}</h2>
+            </div>
+        </div>
         <p>{timeCreated}</p>
         <p><span class="green">Author</span>: { Author}</p>
         </div>
@@ -40,12 +44,14 @@
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
 
     }
 
     .border{
-        border: 1px solid var(--background-color);
-        padding: 1rem;
+		border-left: 5px solid rgb(from var(--primary-color) r g b / 0.3);
+		padding-left: 10px;
+		transition: border-left 0.5s;
     }
 
     .blogpost:not(:last-child)::after{
@@ -60,16 +66,24 @@
 
     .titleh2{
         width: fit-content;
-        color:white;
+        color: var(--primary-color);
         margin-bottom: 0;
         margin-top: 0;
-        transition: color 0.5s;
+
+        
+        mix-blend-mode: difference;
+		word-break: keep-all;
+		white-space: nowrap;
+
     }
 
 
     a{
         text-decoration: none;
+    }
 
+    .wrapper{
+        width: fit-content;
     }
     p{
         font-weight: 500;
@@ -85,18 +99,25 @@
    }
 
 .border:hover .titleh2 {
-    background-color: var(--primary-color);
-    width: 100%;
-    transition: color 0.5s, background-color 0.5s;
+
+        width: 100%;
+
 }
 
-.border:hover .titleh2::after {
-    content: " →";
-    transition: content 0.5s, color 0.5s;
-}
+.border .background{
+		background-color: var(--primary-color);
+		width: 0%;
+		transition: width 0.5s ease;		
+	}
+
+    .border:hover .background{
+		width: 100%;
+	}
+ 
+
 
 .border:hover {
-    border-color: white;
+    border-left: 5px solid var(--primary-color);
     transition: border-color 0.5s;
 }
 

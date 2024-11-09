@@ -17,7 +17,11 @@
 	<div class="border">
 		<a href={githublink} target="_blank" class="slug">
 			<div class="upPart">
-				<h2>{name}</h2>
+				<div class="wrapper">
+					<div class="background">
+						<h2>{name}</h2>
+					</div>
+				</div>
 
 				<span class="link">{githublink.replace('https://github.com/', '')}</span>
 			</div>
@@ -49,12 +53,23 @@
 		height: fit-content;
 
 		& h2 {
-			margin-top: 0;
 			margin-bottom: 0;
+			margin-top: 0;
+			position: relative;
+			width: fit-content;
+
+			color: var(--primary-color);
+			mix-blend-mode: difference;
+			word-break: keep-all;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 
+
+
 		& .link {
-			font-weight: 800;
+		
 			text-decoration: none;
 			margin-bottom: 5px;
 			display: flex;
@@ -84,6 +99,7 @@
 		font-weight: 400;
 		font-size: 1rem;
 		padding-bottom: 1rem;
+		color:lightgray;
 	}
 
 	.project:not(:last-child)::after {
@@ -104,14 +120,29 @@
 		border-left: 5px solid rgb(from var(--primary-color) r g b / 0.3);
 		padding-left: 10px;
 		transition: border-left 0.5s;
+		
 	}
 
 	.border:hover {
 		border-left: 5px solid var(--primary-color);
 	}
 
-	.border:hover .slug h2 {
-		text-decoration: underline;
-		font-weight: bold;
+	.border .background{
+		background-color: var(--primary-color);
+		width: 0%;
+		transition: width 0.5s ease;
+
+		
 	}
+
+	.border:hover .background{
+		width: 100%;
+	}
+
+
+.wrapper{
+	width:fit-content;
+	
+}
+
 </style>
