@@ -5,8 +5,17 @@
 
 <div class="projects">
 	{#each project as { name, source, languages, description }}
+
 		<SlugProject {name} githublink={source} lang={languages}>
 			{description}
 		</SlugProject>
+
+
 	{/each}
 </div>
+
+
+<style>
+
+
+</style>

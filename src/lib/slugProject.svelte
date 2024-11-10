@@ -92,6 +92,7 @@
 		color: white;
 		padding: 20px;
 		overflow: hidden;
+		max-width: 30rem;
 	}
 
 	.descPart {
@@ -120,7 +121,7 @@
 		border-left: 5px solid rgb(from var(--primary-color) r g b / 0.3);
 		padding-left: 10px;
 		transition: border-left 0.5s;
-		
+	
 	}
 
 	.border:hover {

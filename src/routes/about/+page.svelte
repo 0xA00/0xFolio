@@ -1,25 +1,28 @@
+<script>
+	import HeatMap from "$lib/heatMap.svelte";
 
-
-
-
-
+</script>
 
 <h1>About me</h1>
 
 
 <div class="userImg">
-    <img src="https://avatars.githubusercontent.com/0xa00" alt="avatar" width="200" height="200" />
+    <img src="https://imgur.com/9IJ3Vvd.png" alt="avatar" />
+</div>
+<!--
 <div class="userName">
     <div id="sentenceuser"><h2>Hi ! I'm <span id="user">0xa0</span> !</h2><h4>She/her</h4></div>
-    <h3>{~~(new Date().getFullYear()-new Date(2002, 11, 7)/31557600000)-1970} yrs old French developer</h3>
-  
-</div>
+<h3>{~~(Math.floor((new Date() - new Date(2002, 10, 7)) / (365.25 * 24 * 60 * 60 * 1000)))} yrs old French developer</h3>
+
 </div>
 
+-->
+
+<p>Hey ! I'm 0xa0 (or you can call me 0x), a {Math.floor(Number(new Date() - new Date(2002, 10, 7)) / (365.25 * 24 * 60 * 60 * 1000))} years old French developer.</p>
 
 <p>
-    To be simple, I'm a freshly graduated student from Montpellier-Sète University in computer science. 
-    <br>I mainly do projects for fun and to learn new things.
+    To put it simple, I'm a freshly graduated student from Montpellier-Sète University in computer science. 
+
 </p>
 
 <p>
@@ -31,11 +34,34 @@
 </p>
 
 <p>
-    If you want you can find me on <a href="https://x.com/0xA0_" target="_blank">Twitter</a> or <a href="https://github.com/0xA00" target="_blank">Github</a>.
+    If you want you can find me on <a href="https://x.com/0xA0_" target="_blank">Twitter</a>, <a href="https://github.com/0xA00" target="_blank">Github</a> or even on <a href="https://discordapp.com/users/298221448642953217">Discord</a>. 
 </p>
 
+<p>
+    I love to do silly project like scanning the Internet for Minecraft servers. I'm also a member of Wavetech, a technical Minecraft server I play on since August 2023.
+</p>
 
-<img src="https://pbs.twimg.com/profile_banners/2746734373/1723453519/1500x500" alt="header" width="100%" height="auto" />
+<h2>Programming skills</h2>
+<p>
+    I'm not going to list all the languages I know, but here are the main ones I use :
+</p>
+<ul>
+   <li>Java</li>
+    <li>Python</li>
+    <li>C</li>
+    <li>Rust</li>
+    <li>Web languages like HTML, CSS, JS and frameworks like Svelte or Vuejs</li>
+    
+</ul>
+
+
+<img src="https://imgur.com/zRKh7GG.png" alt="Ascii screen" style="margin: 1rem 0;">
+
+
+
+
+
+
 
 
 
@@ -86,83 +112,70 @@
 
 <style>
 
-a {
-    text-decoration: none;
+
+
+ul {            
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+li:before {
+    content: '>';
+    position: absolute;
+    left: 0;
     color: var(--primary-color);
-    transition: color 0.3s;
-    border-bottom: 1px dashed var(--primary-color);
 }
 
-a:hover {
+li:hover:before {
     color: lightblue;
-    border-bottom: 1px dashed lightblue;
+    transform: translateX(3px);
+    transition: transform 0.2s ease;
 }
 
-        
 
 
-    
-
-
-    #sentenceuser{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.55rem;
-        font-size: 0.8rem;
-        }
-
-    #user{
+    a {
+        text-decoration: none;
         color: var(--primary-color);
+        transition: color 0.3s;
+        border-bottom: 1px dashed var(--primary-color);
+    }
 
+    a:hover {
+        color: lightblue;
+        border-bottom: 1px dashed lightblue;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .userImg {
+        max-width: 200px;
+        margin: 0 2rem 1rem 0;
+        float: left;
+    }
+
+    .userImg img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 600px) {
+        .userImg {
+            float: none;
+            margin: 1rem auto;
         }
-
-
-    .userImg{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 1rem;
-        transition: flex-direction 0.5s;
-        }
-
-    .userName{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        }
-
-        .userName *{
-            margin: 0;
-            padding: 0;
-        }
-
-
-   .userImg > img{
-        
-        margin-top: 1rem;
-        margin-left: 1rem;
-        border: 7px solid var(--secondary-color);
-        }
-
-    @media (max-width: 768px){
-
-        .userImg{
-            flex-direction: column;
-            transition: flex-direction 0.5s;
-            
-            gap: 1rem;
-            }
-
-            .userImg > img{
-                margin-left: 0;
-                margin-top: 0;
-                }
-
-
     }
 </style>
-
 
 
 <svelte:head>

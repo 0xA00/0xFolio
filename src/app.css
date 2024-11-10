@@ -16,14 +16,6 @@
   }
 }
 
-@keyframes godinchallah{
-  from {
-    background-position: 50% 50%, 50% 50%;
-}
-to {
-    background-position: 350% 50%, 350% 50%;
-}
-}
 
 body {
   margin: 0;
@@ -33,12 +25,15 @@ body {
 }
 
 p, li{
-	  font-size: 1rem;
+	  font-size: 0.85rem;
+    line-height: 1.6;
+    font-weight: lighter;
 }
 
 
 :root {
-  --primary-color: #8750c7;
+  --primary-color: #bfa8ff;
+  --rimary-color: #8750c7;
   --secondary-color: #ffffff;
   --background-color: #1a1a1a;
 }
