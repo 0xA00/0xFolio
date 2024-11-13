@@ -36,6 +36,11 @@ p, li{
   --rimary-color: #8750c7;
   --secondary-color: #ffffff;
   --background-color: #1a1a1a;
+  cursor: url(./Wii-Cursor.cur), auto;
+}
+
+a {
+  cursor: url(./wii-pointer-blue-ccw.cur), auto;
 }
 
 h2{
