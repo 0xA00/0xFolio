@@ -98,6 +98,7 @@ import "../app.css";
         color: var(--secondary-color);
         font-size: 1.2rem;
         transition: color 0.5s;
+        cursor: url(../wii-pointer-blue-ccw.cur), pointer;
 
 
 
