@@ -109,7 +109,7 @@ import "../app.css";
     a:hover{
         color: var(--primary-color);
         
-        cursor: pointer;
+    
 
 
 
