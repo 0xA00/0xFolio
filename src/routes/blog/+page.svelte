@@ -91,7 +91,7 @@
         opacity: 0.7;
         margin-bottom: 0;
         margin-top: 0;
-        color: white;
+        color: var(--secondary-color);
     }
 
     .green{

@@ -7,7 +7,7 @@
 
 
 <div class="userImg">
-    <img src="https://imgur.com/9IJ3Vvd.png" alt="avatar" />
+    <img src="/assets/pfp.png" alt="avatar" />
 </div>
 <!--
 <div class="userName">
@@ -18,7 +18,7 @@
 
 -->
 
-<p>Hey ! I'm 0xa0 (or you can call me 0x), a {Math.floor(Number(new Date() - new Date(2002, 10, 7)) / (365.25 * 24 * 60 * 60 * 1000))} years old French developer.</p>
+<p>Hey ! I'm <span class="highlight">0xa0</span> (or you can call me 0x), a {Math.floor(Number(new Date() - new Date(2002, 10, 7)) / (365.25 * 24 * 60 * 60 * 1000))} years old French developer.</p>
 
 <p>
     To put it simple, I'm a freshly graduated student from Montpellier-Sète University in computer science. 
@@ -55,7 +55,7 @@
 </ul>
 
 
-<img src="https://imgur.com/zRKh7GG.png" alt="Ascii screen" style="margin: 1rem 0;">
+<img src="/assets/ascii.png" alt="Ascii screen" style="margin: 1rem 0;">
 
 
 
@@ -113,6 +113,10 @@
 <style>
 
 
+.highlight {
+    color: var(--primary-color);
+}
+
 
 ul {            
     list-style-type: none;
@@ -135,7 +139,8 @@ li:before {
 }
 
 li:hover:before {
-    color: lightblue;
+    color:var(--primary-color);
+    filter: hue-rotate(90deg);
     transform: translateX(3px);
     transition: transform 0.2s ease;
 }
@@ -150,8 +155,9 @@ li:hover:before {
     }
 
     a:hover {
-        color: lightblue;
-        border-bottom: 1px dashed lightblue;
+        color: var(--primary-color);
+        border-bottom: 1px dashed var(--primary-color);
+        filter: hue-rotate(90deg);
     }
 
     p {

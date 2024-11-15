@@ -41,7 +41,7 @@
 <style>
 	.slug {
 		text-decoration: none;
-		color: white;
+		color: var(--secondary-color);
 		transition: color 0.5s;
 	}
 
@@ -89,7 +89,7 @@
 		display: flex;
 		flex-direction: column;
 		background-color: var(--background-color);
-		color: white;
+		color: var(--secondary-color);
 		padding: 20px;
 		overflow: hidden;
 		max-width: 30rem;
@@ -100,7 +100,8 @@
 		font-weight: 400;
 		font-size: 1rem;
 		padding-bottom: 1rem;
-		color:lightgray;
+		color:var(--secondary-color);
+		opacity: 0.7;
 	}
 
 	.project:not(:last-child)::after {

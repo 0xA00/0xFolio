@@ -31,11 +31,27 @@ p, li{
 }
 
 
-:root {
+:root[data-theme="dark"]{
   --primary-color: #bfa8ff;
   --rimary-color: #8750c7;
   --secondary-color: #ffffff;
   --background-color: #1a1a1a;
+  cursor: url(./Wii-Cursor.cur), auto;
+}
+
+:root[data-theme="light"]{
+  --primary-color: #af3a03;
+  --rimary-color: #8750c7;
+  --secondary-color: #3c3836;
+  --background-color: #fbf1c7;
+  cursor: url(./Wii-Cursor.cur), auto;
+}
+
+:root{
+  --primary-color: #af3a03;
+  --rimary-color: #8750c7;
+  --secondary-color: #3c3836;
+  --background-color: #fbf1c7;
   cursor: url(./Wii-Cursor.cur), auto;
 }
 
