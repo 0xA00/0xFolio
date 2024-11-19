@@ -55,7 +55,7 @@
 </ul>
 
 
-<img src="/assets/ascii.png" alt="Ascii screen" style="margin: 1rem 0;">
+<img id="ascii" src="/assets/ascii.png" alt="Ascii screen" style="margin: 1rem 0;">
 
 
 
@@ -181,6 +181,8 @@ li:hover:before {
             margin: 1rem auto;
         }
     }
+
+
 </style>
 
 
