@@ -87,7 +87,8 @@ import ListOf88 from "$lib/ListOf88.svelte";
 }
 
 a:hover {
-  color: lightblue;
+  color: var(--primary-color);
+  filter: hue-rotate(90deg);
   border-bottom: 1px dashed lightblue;
 }
 
