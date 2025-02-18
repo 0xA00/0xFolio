@@ -53,6 +53,15 @@ p, li{
 
 }
 
+.responsive-img{
+  width: 100%;
+
+
+  @media (min-width: 768px) {
+    width: 60%;
+  }
+}
+
 :root{
   --primary-color: #af3a03;
   --rimary-color: #8750c7;

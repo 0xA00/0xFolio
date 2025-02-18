@@ -15,7 +15,8 @@ import ListOf88 from "$lib/ListOf88.svelte";
 	about what I do in general. Not all of my projects will be displayed here as some of them can't be even called projects.</p>
 
 	<div>
-		<img src="assets/hunterD.jpeg" alt="header" width="100%" height="auto" />
+		<img src="assets/hunterD.jpeg" alt="header" class="responsive-img">
+		
 	</div>
 	
 	<p>If you want to contact me, you can do so by sending me a DM on <a href="https://discordapp.com/users/298221448642953217">Discord</a>, and you can also find me on Twitter <a href="https://twitter.com/0xa0_" target="_blank">@0xa0_dev</a> and <a href="https://github.com/0xA00">Github</a>.</p>
