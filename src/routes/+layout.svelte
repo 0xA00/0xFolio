@@ -133,7 +133,7 @@ const toggleTheme = () => {
             width: 100%;
             height: auto;
             max-width: 10rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
     }
     #slotDiv{
@@ -185,6 +185,7 @@ const toggleTheme = () => {
         font-size: 1.2rem;
         @media (min-width: 768px) {
             margin-bottom: 0;
+            margin-top:0;
         }
 
     }
