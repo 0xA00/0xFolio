@@ -33,7 +33,7 @@ const toggleTheme = () => {
 </header>
 <div class="mainContent">
     <div class="contentHeader">
-        <img src="assets/back.jpg" alt="0xa0" id="backresponsiveimg"/>
+        <img src="/assets/back.jpg" alt="0xa0" id="backresponsiveimg"/>
         <h1>0xa0.dev</h1>
 
         <form method="POST" use:enhance={submitUpdateTheme}>

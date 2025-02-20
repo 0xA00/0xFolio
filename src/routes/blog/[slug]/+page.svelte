@@ -61,9 +61,21 @@ shikiOptions: {
   }
 
 
+  //data.blogData.timeCreated but time is dumb , so invert the yyyy-mm-dd to mm/dd/yyyy
+  let time = data.blogData.timeCreated;
+  let timeArr = time.split("-");
+  let timeArrInverted = timeArr.reverse();
+  let formattedTime = `${timeArrInverted[1]}/${timeArrInverted[0]}/${timeArrInverted[2]}`;
+
+  let epoxTime = new Date(formattedTime).getTime();
 
 
-    export let imgSet= data.blogData.imgSet || "https://pbs.twimg.com/profile_banners/2746734373/1723453519/600x200";
+  
+
+  let randomInt = epoxTime % 898;
+
+    export let imgSet= `https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/pokemon/${randomInt}.png`;
+    
 
  
 
@@ -73,7 +85,7 @@ shikiOptions: {
 
 <h1 id="tilte">{data.blogData.title}</h1>
 <h3 id="timecre">Published {data.blogData.timeCreated}</h3>
-<img src={imgSet} alt="blog post image" style="width: 100%; height: auto;" />
+<img src={imgSet} alt="blog post image" style="width: 128px; height: auto;" />
 
 
 

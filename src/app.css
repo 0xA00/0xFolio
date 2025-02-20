@@ -25,17 +25,17 @@ body {
 }
 
 p, li{
-	  font-size: 0.85rem;
+	  font-size: 0.9rem;
     line-height: 1.6;
     font-weight: lighter;
 }
 
 
 :root[data-theme="dark"]{
-  --primary-color: #bfa8ff;
+  --primary-color: #ff6767;
   --rimary-color: #8750c7;
   --secondary-color: #ffffff;
-  --background-color: #1a1a1a;
+  --background-color: #000000;
   cursor: url(./Wii-Cursor.cur), auto;
 }
 
