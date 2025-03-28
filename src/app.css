@@ -1,6 +1,6 @@
 
 @import '$lib/SpaceG.css';
-@import '@cartamd/plugin-code/default.css';
+
 
 :root{
   font-family: 'Space Grotesk', sans-serif;
@@ -12,7 +12,7 @@
 
   color: var(--secondary-color);
   & h1{
-    color:var(--primary-color);
+    color:var(--secondary-color);
   }
 }
 
@@ -21,36 +21,39 @@ body {
   margin: 0;
   color: var(--secondary-color);
   padding: 23px;
+  scroll-behavior: smooth;
   
+}
+
+.sidebar-hidden #leftSide {
+  width: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+}
+
+.sidebar-hidden #upperLeftSide {
+  margin-right: 0.5em !important;
 }
 
 p, li{
 	  font-size: 0.9rem;
-    line-height: 1.6;
+
     font-weight: lighter;
 }
 
+#row88{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
 
-:root[data-theme="dark"]{
+
+:root{
   --primary-color: #ff6767;
   --rimary-color: #8750c7;
   --secondary-color: #ffffff;
-  --background-color: #000000;
+  --background-color:  #141414;
   cursor: url(./Wii-Cursor.cur), auto;
-}
-
-:root[data-theme="light"]{
-  --primary-color: #af3a03;
-  --rimary-color: #8750c7;
-  --secondary-color: #3c3836;
-  --background-color: #f9f5d7;
-  cursor: url(./Wii-Cursor.cur), auto;
-
-  & #ascii{
-    filter:sepia(100%);
-  }
-
-
 }
 
 .responsive-img{
@@ -62,22 +65,40 @@ p, li{
   }
 }
 
-:root{
-  --primary-color: #af3a03;
-  --rimary-color: #8750c7;
-  --secondary-color: #3c3836;
-  --background-color: #f9f5d7;
-  cursor: url(./Wii-Cursor.cur), auto;
+ul {
+  list-style-type: none;
+
 }
+
+li::before {
+  content: "- ";
+  color: var(--primary-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 
 a {
   cursor: url(./wii-pointer-blue-ccw.cur), auto;
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color 0.3s;
 }
 
 h2{
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color: var(--primary-color);
+  height: 1px;
+}
 
 
 
@@ -149,23 +170,3 @@ img {
   scrollbar-color: rgba(255, 255, 255, 0.466) transparent;  /* Thin scrollbar, transparent track, and light thumb */
 }
 
-
-.carta-viewer > :not(pre) > code {
-  background-color: #333;
-  color: var(--primary-color);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: bold; /* Make the text bold */
-}
-
-.carta-viewer a {
-  text-decoration: none;
-  color: var(--primary-color);
-  transition: color 0.3s;
-  border-bottom: 1px dashed var(--primary-color);
-}
-
-.carta-viewer a:hover {
-  color: lightblue;
-  border-bottom: 1px dashed lightblue;
-}

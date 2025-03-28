@@ -7,10 +7,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 		%sveltekit.head%
+
 	</head>
-	<body>
+	<body class="sidebar-auto">
+		<script>
+			if (window.innerWidth < 768) {
+			  document.body.classList.remove('sidebar-auto');
+			  document.body.classList.add('sidebar-hidden');
+			} else {
+			  document.body.classList.remove('sidebar-auto');
+			}
+		  </script>
 		<div style="display: contents">
 		%sveltekit.body%
 		</div>
+
+
 	</body>
 </html>
