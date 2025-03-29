@@ -17,7 +17,7 @@ https://0xa0.dev {
         reverse_proxy localhost:8300
     }
 
-    /* I hate the green thingy*/
+
 
     reverse_proxy localhost:3000
 }
