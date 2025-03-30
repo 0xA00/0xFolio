@@ -16,21 +16,21 @@ https://0xa0.dev {
 
     reverse_proxy @bili localhost:8300
 
-    handle /wp* {
-		reverse_proxy localhost:8888
-	}
-	handle /xmlrpc.php {
-		reverse_proxy localhost:8888
-	}
-	handle /phpmyadmin* {
-		reverse_proxy localhost:8888
-	}
-	handle /admin.php {
-		reverse_proxy localhost:8888
-	}
-	handle /setup.php {
-		reverse_proxy localhost:8888
-	}
+    handle_path /wp-* {
+    reverse_proxy localhost:10000
+    }
+
+    handle_path /wp-admin/* {
+        reverse_proxy localhost:10000
+    }
+
+    handle_path /phpmyadmin/* {
+        reverse_proxy localhost:10000
+    }
+
+    handle_path /admin.php {
+        reverse_proxy localhost:10000
+    }
 
 
     reverse_proxy localhost:3000
