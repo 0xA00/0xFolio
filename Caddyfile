@@ -32,6 +32,10 @@ https://0xa0.dev {
         reverse_proxy localhost:10000
     }
 
+    handle_path /xmlrpc.php {
+        reverse_proxy localhost:10000
+    }
+
 
     reverse_proxy localhost:3000
 }
