@@ -10,7 +10,13 @@ blog.0xa0.dev {
 }
 
 mail.0xa0.dev {
-  respond "Mail cert only" 200
+
+  tls {
+    key_type rsa2048
+  }
+
+  
+  respond "Hello DMS"
 }
 
 
