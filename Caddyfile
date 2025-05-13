@@ -9,6 +9,10 @@ blog.0xa0.dev {
     reverse_proxy localhost:9999
 }
 
+mail.0xa0.dev {
+  respond "Mail cert only" 200
+}
+
 
 https://0xa0.dev {
 
