@@ -11,12 +11,11 @@ blog.0xa0.dev {
 
 mail.0xa0.dev {
 
-  tls {
-    key_type rsa2048
-  }
-
-  
-  respond "Hello DMS"
+reverse_proxy 127.0.0.1:8443 {
+        transport http {
+            tls_insecure_skip_verify
+        }
+    }
 }
 
 
