@@ -9,10 +9,7 @@ blog.0xa0.dev {
     reverse_proxy localhost:9999
 }
 
-mail.0xa0.dev {
-    root * /var/www/empty
-    file_server
-}
+
 
 
 https://0xa0.dev {
@@ -43,4 +40,9 @@ https://0xa0.dev {
 
 
     reverse_proxy localhost:3000
+}
+
+mail.0xa0.dev {
+    root * /var/www/empty
+    file_server
 }
