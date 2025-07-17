@@ -15,6 +15,10 @@ https://0xa0.dev {
 
     reverse_proxy @bili localhost:8300
 
+    handle_path /42 {
+    reverse_proxy localhost:4242
+    }
+    
     handle_path /wp-* {
     reverse_proxy localhost:10000
     }
